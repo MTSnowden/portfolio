@@ -1,7 +1,10 @@
+import { useHref } from "react-router-dom";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import texascale from '../assets/texascale-2019.png'
+import designsafe from '../assets/designsafe.jpeg'
 
 // Innovative software developer with comprehensive experience in full stack development and consulting. Proven
 // expertise in front-end design and implementation with React.js. Adept at translating complex requirements into
@@ -63,16 +66,19 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "TexaScale Magazine",
-    image: project1,
+    image: texascale,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Researched, designed and coded website features and functionality using React.",
+    URL: "https://texascale.org/2019/",
+    technologies: ["HTML", "CSS", "React", "Node.js"],
+    
   },
   {
     title: "DesignSafe",
-    image: project2,
+    image: designsafe,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      "Designed and coded portal features for DesignSafe, a platform that enables research and educational advancements aimed at preventing natural hazard events from becoming societal disasters.",
+          // URL: "https://tacc.utexas.edu/research/tacc-research/designsafe/",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
   {
@@ -87,7 +93,7 @@ export const PROJECTS = [
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["HTML", "CSS", "Express", "mySQL"],
   },
 ];
 
